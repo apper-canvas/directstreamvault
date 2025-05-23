@@ -36,7 +36,7 @@ export default {
           dark: '#334155'
         },
         background: '#ffffff',
-        foreground: '#0f172a'
+        foreground: '#0f172a',
         }
       },
       fontFamily: {
