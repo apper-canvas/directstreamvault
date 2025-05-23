@@ -40,24 +40,3 @@ function App() {
 }
 
 export default App
-        </div>
-      </Router>
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme={darkMode ? "dark" : "light"}
-        className="mt-16"
-        toastClassName="bg-surface-800 text-white border border-surface-700"
-      />
-    </div>
-  )
-}
-
-export default App
