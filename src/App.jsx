@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { ToastProvider } from './components/Toast';
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastProvider } from './components/Toast'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 
@@ -20,20 +18,6 @@ function App() {
             </Routes>
           </div>
         </Router>
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme={darkMode ? "dark" : "light"}
-          className="mt-16"
-          toastClassName="bg-surface-800 text-white border border-surface-700"
-        />
       </div>
     </ToastProvider>
   )
