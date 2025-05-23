@@ -72,17 +72,34 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* React Toastify custom styles */
-.Toastify__toast--success {
-  background: linear-gradient(135deg, #059669, #10b981);
+/* Custom Toast Notification Styles */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  pointer-events: none;
 }
 
-.Toastify__toast--error {
-  background: linear-gradient(135deg, #dc2626, #ef4444);
+.toast {
+  pointer-events: auto;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  animation: slideIn 0.3s ease-out;
 }
 
-.Toastify__toast--warning {
-  background: linear-gradient(135deg, #d97706, #f59e0b);
+.toast-success { background: linear-gradient(135deg, #059669, #10b981); }
+.toast-error { background: linear-gradient(135deg, #dc2626, #ef4444); }
+.toast-warning { background: linear-gradient(135deg, #d97706, #f59e0b); }
+.toast-info { background: linear-gradient(135deg, #0ea5e9, #3b82f6); }
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 /* Video player enhancements */
